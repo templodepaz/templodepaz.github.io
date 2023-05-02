@@ -1,0 +1,362 @@
+body {
+    background-color: white;
+    height: 100%;
+  margin: 0;
+  margin-right: 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header nav {
+    background-color: gray;
+    padding: 1rem;
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    margin: 0;
+    width: auto;
+    height: 100%;
+    /* object-fit: cover; */
+}
+    
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    object-fit: cover; 
+}
+    
+nav li {
+    margin: auto;
+}
+    
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+    
+nav a:hover {
+    background-color: rgb(176, 27, 27);
+}
+    
+h1, h2, p, .consulta {
+    text-align: center;
+}
+h1 {
+    margin-top: 0;
+    font-size: 4rem;
+    padding-top: 40px;
+    color: aqua;
+    text-shadow: 2px 2px 4px rgb(8, 8, 8) ;
+}
+/* header.hero {
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+    z-index: 1;
+} */
+    
+.video-fondo {
+    position: relative;
+    height: auto;
+    background: transparent;
+    border: none;
+}
+    
+.video-fondo video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border: none;
+    /* opacity: 1; */
+}
+    
+.contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    width: 80%;
+}
+    
+h2 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgb(8, 8, 8) ;
+}
+#servicioTitulo {
+    margin-top: 0;
+    color: aqua;
+    text-shadow: 2px 2px 4px rgb(8, 8, 8) ;
+}    
+p {
+    font-size: 1.5rem;
+}    
+.consulta {
+    text-decoration: none;
+    background-color: #61ce70;
+    text-shadow: 2px 2px 4px rgb(8, 8, 8) ;
+    border-radius: 5px;
+    border: 2px;
+    font-size: 1rem;
+    padding: 10px;
+    display: block; 
+    margin: auto;
+}
+.consulta a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(8, 8, 8) ;
+}
+.consulta:hover {
+    background-color: #4fa55b;
+}
+.numero {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(8, 8, 8) ;
+}
+.numero:hover {
+    color: rgb(13, 13, 12);
+}
+#servicios {
+    position: relative;
+    background-image: url('./imagenes/altar3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px;
+    border: none;
+}  
+.serviciosContenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.servicioConsultar {
+    color: rgb(255, 247, 3);
+    text-shadow: 2px 2px 4px rgb(8, 8, 8) ;
+    font-size: 1.5rem;
+}
+.servicio1 {
+    background-color: rgba(237, 212, 166, 0.1);
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.servicio2 {
+    background-color: rgba(43, 154, 76, 0.1);
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    border-radius: 5px;
+
+}
+.servicio3 {
+    background-color: rgba(237, 212, 166, 0.1);
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    border-radius: 5px;
+}
+.servicio4 {
+    background-color: rgba(43, 154, 76, 0.1);
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    border-radius: 5px;
+}
+.servicio5 {
+    background-color: rgba(237, 212, 166, 0.1);
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    border-radius: 5px;
+}
+.servicio6 {
+    background-color: rgba(43, 154, 76, 0.1);
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    border-radius: 5px;
+}
+.servicio1:hover, .servicio2:hover, .servicio3:hover, .servicio4:hover, .servicio5:hover, .servicio6:hover {
+    transform: scale(1.05);
+    animation: aumentar 0.5s ease-in-out forwards;
+}
+.boton {
+    border: 1px solid black;
+    background-color: #4fa55b;
+    width: 150px;
+    text-align: center;
+    padding: 2px;
+    margin-left: 250px;
+    border-radius: 5px;
+    display: block; 
+    margin: auto;
+    color: #fff;
+}
+.boton:hover {
+    color: white;
+    background-color: #2a5f31;
+}
+#testimonios {
+    position: relative;
+    background-image: url('./imagenes/pexels-mateus-souza-2494701.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px;
+}
+.testimoniosTitulo {
+    margin-top: 0;
+    color: aqua;
+    text-shadow: 2px 2px 4px rgb(8, 8, 8) ;
+    font-size: 3rem;
+}
+.descripcionTestimonios {
+    padding: 10px;
+    color: black;
+    text-shadow: 2px 2px 4px rgb(8, 8, 8) ;
+}
+.testimonioPersonas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+}
+.imagesTestimonios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+}
+.images {
+    width: 80%;
+    height: 80%;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 300px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+.logo:hover {
+    opacity: 0.5;
+    animation: aumentar 0.5s ease-in-out forwards;
+    transform:  scale(1.2);
+}
+
+.contactoVideo {
+      position: relative;
+      height: auto;
+      background: transparent;
+      border: none;
+}
+.contactoVideo video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      border: none;
+      /* opacity: 1; */
+}
+#contacto {
+  margin: 0;
+  padding-top: 30px;
+  color: aqua;
+  text-shadow: 2px 2px 4px rgb(8, 8, 8) ;
+  font-size: 3rem;
+}
+.contactoTexto {
+  color: yellow;
+  background-color: rgba(43, 154, 76, 0.1);
+  padding: 30px 30px;
+  margin: 0px 100px;
+  border-radius: 5px;
+}
+.logoContacto {
+  display: block; 
+  margin: auto;
+}
+.logoContacto:hover {
+  opacity: 0.9;
+  animation: aumentar 0.5s ease-in-out forwards;
+  transform:  scale(1.5);
+}
+footer {
+  color: black;
+  font-size: 1rem;
+  text-align: start;
+  margin-left: 200px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Estilos de video de fondo */
+  .video-fondo {
+    width: 100%;
+    height: auto;
+  }
+  header {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+  }
+  nav li {
+    font-size: 12px;
+}
+  /* Estilos de contenido */
+  .content {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  footer {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+
+
